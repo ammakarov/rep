@@ -6,14 +6,14 @@ name = 'Василий';
 admin = name;*/
 // alert('Я - JavaScript');
 // alert('Привет');
-alert(admin);
+//alert(admin);
 /*var myPlanet = 'Земля';
 var vizitorName = 'Петя';
 alert(1/0);
 var i, a, b, c;
 a=1;
 b=3;*/
-b=3;
+//b=3;
 
 var objects = [
     {key: 3,
@@ -28,12 +28,24 @@ var objects = [
 ];
 
 // вывести title, у которого key == 8
+for(var i=0; i<3; i++)
+{
+    if (objects[i].key == 8)
+        alert(objects[i].title);
 
+};
+
+for(o in objects)
+    if (objects[o].key == 8)
+        alert(objects[o].title)
 
 // посчитать сумму значений key
+var summKey = 0;
+for(a in objects)
+    summKey += objects[a].key;
+alert('Сумма ' + summKey);
 
 
 
-alert("проверка дальнего срабатывания");
 
 
