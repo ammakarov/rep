@@ -35,13 +35,13 @@ for(var i=0; i<3; i++)
 
 };
 
-for(o in objects)
+for(var o in objects)
     if (objects[o].key == 8)
         alert(objects[o].title)
 
 // посчитать сумму значений key
 var summKey = 0;
-for(a in objects)
+for(var a in objects)
     summKey += objects[a].key;
 alert('Сумма ' + summKey);
 
