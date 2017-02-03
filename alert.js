@@ -10,4 +10,13 @@ alert(admin);
 var myPlanet = 'Земля';
 var vizitorName = 'Петя';
 alert(1/0);
+var i, a, b,c;
+a=1;
+b=3;
+
+
+alert("проверка дальнего срабатывания");
+alert(a);
+alert(b);
+
 
