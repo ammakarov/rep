@@ -15,6 +15,7 @@ else
 {
     alert('Не знаете? "EcmaScript"!')
 }*/
+
 var namber = prompt('Введите число', '');
 if (namber > 0)
     alert('1');
