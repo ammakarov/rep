@@ -8,9 +8,7 @@
 var otvet = '';
 otvet = prompt("Каково \"официальное\" название JavaScript?", '');
 if(otvet == 'EcmaScript')
-{
     alert('Верно');
-}
 else
 {
     alert('Не знаете? "EcmaScript"!')
@@ -40,6 +38,13 @@ else if(login != 'Админ')
                 alert('Добро пожаловать!');
     }*/
 
+/*
+var a = b = 1;
+resualt = (a + b < 4) ? 'Мало'  : 'Много';
+alert(resualt);*/
 
 
-
+var message = (login == 'Вася') ? 'Привет' :
+    (login == 'Директор') ? 'Здраствуйте' :
+        (login == '') ? 'Нет логиана' :
+            '';
