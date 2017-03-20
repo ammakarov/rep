@@ -49,9 +49,15 @@ var message = (login == 'Вася') ? 'Привет' :
     (login == 'Директор') ? 'Здраствуйте' :
         (login == '') ? 'Нет логиана' :
             '';*/
-var i, j, simpleNamber = ' ';
-for(i=2; i<101; i++)
+/*var i, j, simpleNamber = ' ';
+for(i=10; i<101; i++)
     for (j=2; j<=i; j++)
         if(j == i) simpleNamber = simpleNamber + i + ', ';
+        else if(!(i % j)) break;
+alert(simpleNamber);*/
+var i, j, simpleNamber = ' ';
+for(i=10; i<101; i++)
+    for (j=2; j<=10; j++)
+        if(j == 10) simpleNamber = simpleNamber + i + '/ ';
         else if(!(i % j)) break;
 alert(simpleNamber);
