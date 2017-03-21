@@ -55,9 +55,52 @@ for(i=10; i<101; i++)
         if(j == i) simpleNamber = simpleNamber + i + ', ';
         else if(!(i % j)) break;
 alert(simpleNamber);*/
+/*
 var i, j, simpleNamber = ' ';
 for(i=10; i<101; i++)
     for (j=2; j<=10; j++)
         if(j == 10) simpleNamber = simpleNamber + i + '/ ';
         else if(!(i % j)) break;
-alert(simpleNamber);
+alert(simpleNamber);*/
+
+function sumTo1(n) {
+    var i, sum = 0;
+    for (i = 1; i<=n; i++)
+        sum += i;
+    return sum;
+}
+function sumTo2(n) {
+    if(n != 1)
+        return n + sumTo2(n - 1)
+    else
+        return 1
+
+}
+function sumTo3(n) {
+    return (1+n)/2*n
+
+}
+
+function factorial(n) {
+    if (n != 1)
+        return n * factorial(n - 1);
+    else
+        return n;
+
+}
+function fib(n) {
+    var a = 0, b = 1, c;
+    for(var i = 2; i <=n; i++)
+    {
+        c = a + b;
+        a = b;
+        b = c;
+    }
+    return b;
+
+
+
+}
+
+alert(fib(77));
+
