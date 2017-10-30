@@ -2,7 +2,7 @@
  * Created by Aleksej on 30/10/17.
  */
 function ucFirst(inputString) {
-
-
-    return inputString;
+    var rezaltString;
+    rezaltString = inputString[0];
+    return rezaltString;
 }
